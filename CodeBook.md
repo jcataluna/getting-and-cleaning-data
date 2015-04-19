@@ -92,14 +92,3 @@ There are 5 steps:
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-## How ```run_analysis.R``` works:
-
-* Require ```pylr``` librareis.
-* Load the features and activity labels.
-* Load both test and train data
-* Merge test and train data with correct type column for Activity.
-* Extract just mean and standard deviation from data.
-* Final merge of tydi data.
-* Change Activity column to factor type for clarity.
-* Make better column names for clarity.
-* Obtain requested data and write it to file average_by_subject_and_activity.csv
