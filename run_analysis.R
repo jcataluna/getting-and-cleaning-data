@@ -79,5 +79,6 @@ names(dataSet) <- gsub('Freq$',"Frequency",names(dataSet))
 # Question 5. Average by subject and activity
 ###################################################################
 average_by_subject_and_activity <- ddply(dataSet, c("Subject","Activity"), numcolwise(mean))
-write.csv(average_by_subject_and_activity, file = "average_by_subject_and_activity.csv" )
+write.table(average_by_subject_and_activity, file = "average_by_subject_and_activity.txt", row.names = FALSE)
+
 
